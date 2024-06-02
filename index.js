@@ -1,10 +1,10 @@
 const { Client } = require('pg');
 
 const client = new Client({
-    user: 'postgres',     // Reemplaza con tu usuario de PostgreSQL
+    user: 'postgres',     // usuario de PostgreSQL
     host: 'localhost',
     database: 'always_music',
-    password: '11235', // Reemplaza con tu contraseña de PostgreSQL
+    password: '11235', // contraseña de PostgreSQL
     port: 5432,
 });
 
@@ -76,6 +76,22 @@ switch (command) {
     default:
         console.log('Comando no reconocido');
 }
+
+//líneas de comando a ejecutar en la consola
+// # Agregar un nuevo estudiante
+// node index.js agregar "Juan Pérez" "12345678-9" "Guitarra" 5
+
+// # Consultar todos los estudiantes
+// node index.js consultar
+
+// # Consultar un estudiante por rut
+// node index.js consultar-rut "12345678-9"
+
+// # Actualizar un estudiante
+// node index.js actualizar "Juan Pérez" "12345678-9" "Batería" 6
+
+// # Eliminar un estudiante
+// node index.js eliminar "12345678-9"
 
 
 
