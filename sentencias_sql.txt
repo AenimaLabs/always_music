@@ -1,0 +1,16 @@
+1.- crear la base de datos en PostgreSQL
+
+CREATE DATABASE always_music;
+
+2.- abrir psql y conectar la base de datos
+
+\c always_music
+
+3.- crear la tabla estudiantes
+
+CREATE TABLE estudiantes (
+    nombre VARCHAR(50),
+    rut VARCHAR(12) PRIMARY KEY,
+    curso VARCHAR(50),
+    nivel INT
+);
